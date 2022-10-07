@@ -1,0 +1,182 @@
+body
+{
+
+  background-color: black !important;
+}
+
+
+@mixin button
+{
+  // background-color: #ef8fc1;
+  width: 11rem;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 20px;
+  margin: 2px;
+}
+
+.h1
+{
+  padding-top: 30px;
+}
+.con1
+{
+  background-color: #A0C3FF;
+  .login
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .col1
+    {
+      padding: 50px !important;
+      background-color: white;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+      border-radius: 10px;
+    }
+    .btn1
+    {
+      @include button();
+      background-color:#729af0;
+    }
+    .btn2
+    {
+      @include button();
+    }
+  .email
+  {
+    padding: 10px;
+    width: 16.7rem;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-left: 11px;
+  }
+  .password
+  {
+    padding: 10px;
+    width: 16.9rem;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  .lab1{
+    font-size: 19px !important;
+    margin-right: 30px;
+  }
+  .lab2{
+    font-size: 19px !important;
+    margin-right: 5px;
+  }
+  .btn3
+  {
+    @include button();
+    margin-top: 20px;
+    background-color: #729af0;
+    width: 100%;
+  }
+  p{
+    margin-top: 20px;
+    a{
+      text-decoration: none;
+    }
+  }
+  }
+
+}
+
+.links
+{
+  text-decoration: none;
+  color: black;
+}
+
+.signup
+{
+
+  background-color: #36474F;
+ 
+  .login
+    {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  
+
+    .col1
+    {
+      padding: 50px;
+      background-color: white;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+      border-radius: 10px;
+    }
+    .btn1
+    {
+      @include button();
+      background-color:white;
+    }
+    .btn2
+    {
+      @include button();
+      background-color: #99cae0;
+    }
+
+
+    
+
+  .email
+  {
+    padding: 10px;
+    width: 16.7rem;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-left: 11px;
+  }
+  .password
+  {
+    padding: 10px;
+    width: 16.9rem;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  .lab1{
+    font-size: 19px !important;
+    margin-right: 30px;
+  }
+  .lab2{
+    font-size: 19px !important;
+    margin-right: 5px;
+  }
+  .btn3
+  {
+    @include button();
+    margin-top: 20px;
+    background-color: #8bbacf;
+    width: 100%;
+  }
+  p{
+    margin-top: 20px;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+.fname
+    {
+      padding: 10px;
+      width: 16.5rem;
+      margin-top: 15px;
+      border-radius: 5px;
+      margin-left: 29px;
+    }
+    .namelab
+    {
+      font-size: 19px !important;
+    margin-right: 8px;
+    }
+}
