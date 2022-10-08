@@ -3,8 +3,6 @@ body
 
   background-color: black !important;
 }
-
-
 @mixin button
 {
   // background-color: #ef8fc1;
@@ -20,10 +18,17 @@ body
 {
   padding-top: 30px;
 }
-.con1
+.login
 {
   background-color: #A0C3FF;
-  .login
+  .btm
+  {
+    @include button();
+    background-color: #729AF0;
+    height: auto;
+    
+  }
+  .con1
   {
     display: flex;
     flex-direction: column;
@@ -47,37 +52,10 @@ body
     .btn2
     {
       @include button();
+      background-color: white
     }
-  .email
-  {
-    padding: 10px;
-    width: 16.7rem;
-    margin-top: 15px;
-    border-radius: 5px;
-    margin-left: 11px;
-  }
-  .password
-  {
-    padding: 10px;
-    width: 16.9rem;
-    margin-top: 15px;
-    border-radius: 5px;
-  }
-  .lab1{
-    font-size: 19px !important;
-    margin-right: 30px;
-  }
-  .lab2{
-    font-size: 19px !important;
-    margin-right: 5px;
-  }
-  .btn3
-  {
-    @include button();
-    margin-top: 20px;
-    background-color: #729af0;
-    width: 100%;
-  }
+  
+  
   p{
     margin-top: 20px;
     a{
@@ -94,12 +72,25 @@ body
   color: black;
 }
 
+
+//signUp start
+
+
 .signup
 {
 
   background-color: #36474F;
- 
-  .login
+ .btm
+ {
+  background-color: #99cae0;
+ }
+  .brd
+  {
+    border: 2px solid black;
+  }
+
+  
+  .con1
     {
      display: flex;
      flex-direction: column;
@@ -107,7 +98,7 @@ body
      align-items: center;
   
 
-    .col1
+    .col2
     {
       padding: 50px;
       background-color: white;
@@ -129,29 +120,8 @@ body
 
     
 
-  .email
-  {
-    padding: 10px;
-    width: 16.7rem;
-    margin-top: 15px;
-    border-radius: 5px;
-    margin-left: 11px;
-  }
-  .password
-  {
-    padding: 10px;
-    width: 16.9rem;
-    margin-top: 15px;
-    border-radius: 5px;
-  }
-  .lab1{
-    font-size: 19px !important;
-    margin-right: 30px;
-  }
-  .lab2{
-    font-size: 19px !important;
-    margin-right: 5px;
-  }
+  
+  
   .btn3
   {
     @include button();
@@ -161,22 +131,14 @@ body
   }
   p{
     margin-top: 20px;
-    a{
+         a{
       text-decoration: none;
-    }
+        }
+      }
   }
-}
-.fname
-    {
-      padding: 10px;
-      width: 16.5rem;
-      margin-top: 15px;
-      border-radius: 5px;
-      margin-left: 29px;
-    }
-    .namelab
-    {
-      font-size: 19px !important;
-    margin-right: 8px;
-    }
+
+    
+
+     
+    
 }
